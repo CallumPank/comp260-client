@@ -1,0 +1,10 @@
+D:\Users\Callum\Desktop\New folder (2)\comp260-client\Assignment 2\Final 2\Windows Client\Windows Client\bin\Debug\Form Client.exe.config
+D:\Users\Callum\Desktop\New folder (2)\comp260-client\Assignment 2\Final 2\Windows Client\Windows Client\bin\Debug\Form Client.exe
+D:\Users\Callum\Desktop\New folder (2)\comp260-client\Assignment 2\Final 2\Windows Client\Windows Client\bin\Debug\Form Client.pdb
+D:\Users\Callum\Desktop\New folder (2)\comp260-client\Assignment 2\Final 2\Windows Client\Windows Client\obj\Debug\Windows Client.csprojResolveAssemblyReference.cache
+D:\Users\Callum\Desktop\New folder (2)\comp260-client\Assignment 2\Final 2\Windows Client\Windows Client\obj\Debug\Part_03_FormClient.Form1.resources
+D:\Users\Callum\Desktop\New folder (2)\comp260-client\Assignment 2\Final 2\Windows Client\Windows Client\obj\Debug\FormClient.Properties.Resources.resources
+D:\Users\Callum\Desktop\New folder (2)\comp260-client\Assignment 2\Final 2\Windows Client\Windows Client\obj\Debug\Windows Client.csproj.GenerateResource.Cache
+D:\Users\Callum\Desktop\New folder (2)\comp260-client\Assignment 2\Final 2\Windows Client\Windows Client\obj\Debug\Windows Client.csproj.CoreCompileInputs.cache
+D:\Users\Callum\Desktop\New folder (2)\comp260-client\Assignment 2\Final 2\Windows Client\Windows Client\obj\Debug\Form Client.exe
+D:\Users\Callum\Desktop\New folder (2)\comp260-client\Assignment 2\Final 2\Windows Client\Windows Client\obj\Debug\Form Client.pdb
