@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 
-namespace SUD
+namespace Program
 {
     public class Dungeon
     {
@@ -105,7 +105,7 @@ namespace SUD
                 room.south = "Room 11";
                 roomMap.Add(room.name, room);
             }
-
+            currentRoom = roomMap["Room 0"];
         }
 
         public String SendInfo(Player player)
