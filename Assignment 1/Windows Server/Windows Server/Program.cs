@@ -63,6 +63,8 @@ namespace Program
                     player.Init();
                     PlayerList.Add(player);
                     clientID++;
+
+                    Console.WriteLine("Accepted Client: " + clientName);
                 }
             }
         }
@@ -166,23 +168,31 @@ namespace Program
 
                     int PlayerID = Int32.Parse(substrings[0]) - 1;
                     var dungeonResult = dungeon.Process(substrings[1], PlayerList[PlayerID], PlayerID);
-                    Console.WriteLine(dungeonResult);
+                    Console.WriteLine("Sending to client: {"+dungeonResult+"}");
 
                     byte[] sendBuffer = encoder.GetBytes(dungeonResult); // Send result back to client
 
                     String dung = dungeonResult.Substring(0, 6);
-                    if (dung == "Player")
+                    int bytesSent;
+
+                    try
                     {
-                        for (int i = 1; i <= clientDictionary.Count; i++)
+                        if (dung == "Player")
                         {
-                            int bytesSent = GetSocketFromName("client" + i).Send(sendBuffer);
+                            for (int i = 1; i <= clientDictionary.Count; i++)
+                            {
+                                bytesSent = GetSocketFromName("client" + i).Send(sendBuffer);
+                            }
+                        }
+                        else
+                        {
+                            bytesSent = GetSocketFromName("client" + substrings[0]).Send(sendBuffer);
                         }
                     }
-                    else
+                    catch(Exception)
                     {
-                        int bytesSent = GetSocketFromName("client" + substrings[0]).Send(sendBuffer);
+                        Console.WriteLine("Send failed");
                     }
-
 
                 }
 

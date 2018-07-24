@@ -25,7 +25,7 @@ namespace Client
                 try
                 {
                     int reciever = s.Receive(receiveBuffer);
-                    s.Receive(receiveBuffer);
+                    
                     if (reciever > 0)
                     {
                         String clientMsg = encoder.GetString(receiveBuffer, 0, reciever);
@@ -55,6 +55,9 @@ namespace Client
                 Console.WriteLine("Looking for server: " + ipLocal);
                 try
                 {
+                    s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                    ipLocal = new IPEndPoint(IPAddress.Parse(ipAdress), port);
+
                     s.Connect(ipLocal);
                     Console.Clear();
                     Console.WriteLine("Connected To Server\n\nType help for assistance");
@@ -62,6 +65,7 @@ namespace Client
                 }
                 catch (Exception)
                 {
+                    Console.WriteLine("No server");
                     Thread.Sleep(1000);
                 }
             }
@@ -85,7 +89,7 @@ namespace Client
                 {
                     // Writes messages to server
                     Console.WriteLine("Writing to server: " + ClientText);
-                    int bytesSent = s.Send(buffer);
+                    int bytesSent = s.Send(buffer);                    
                 }
                 catch (System.Exception ex)
                 {

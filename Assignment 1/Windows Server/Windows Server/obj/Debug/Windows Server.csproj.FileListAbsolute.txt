@@ -5,3 +5,10 @@ C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-cl
 C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-client\Assignment 1\Windows Server\Windows Server\bin\Debug\Windows Server.pdb
 C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-client\Assignment 1\Windows Server\Windows Server\obj\Debug\Windows Server.exe
 C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-client\Assignment 1\Windows Server\Windows Server\obj\Debug\Windows Server.pdb
+C:\Users\CP192723\Downloads\comp260-client\Assignment 1\Windows Server\Windows Server\bin\Debug\Windows Server.exe.config
+C:\Users\CP192723\Downloads\comp260-client\Assignment 1\Windows Server\Windows Server\bin\Debug\Windows Server.exe
+C:\Users\CP192723\Downloads\comp260-client\Assignment 1\Windows Server\Windows Server\bin\Debug\Windows Server.pdb
+C:\Users\CP192723\Downloads\comp260-client\Assignment 1\Windows Server\Windows Server\obj\Debug\Windows Server.csprojResolveAssemblyReference.cache
+C:\Users\CP192723\Downloads\comp260-client\Assignment 1\Windows Server\Windows Server\obj\Debug\Windows Server.csproj.CoreCompileInputs.cache
+C:\Users\CP192723\Downloads\comp260-client\Assignment 1\Windows Server\Windows Server\obj\Debug\Windows Server.exe
+C:\Users\CP192723\Downloads\comp260-client\Assignment 1\Windows Server\Windows Server\obj\Debug\Windows Server.pdb

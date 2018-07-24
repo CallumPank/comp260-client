@@ -82,3 +82,19 @@ D:\Users\Callum\Desktop\New folder (2)\windows\sqlite example\obj\Debug\sqlite e
 D:\Users\Callum\Desktop\New folder (2)\windows\sqlite example\obj\Debug\sqlite example.csproj.CoreCompileInputs.cache
 D:\Users\Callum\Desktop\New folder (2)\windows\sqlite example\obj\Debug\sqlite example.exe
 D:\Users\Callum\Desktop\New folder (2)\windows\sqlite example\obj\Debug\sqlite example.pdb
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\sqlite example.exe.config
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\sqlite example.exe
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\sqlite example.pdb
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\EntityFramework.dll
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\System.Data.SQLite.dll
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\EntityFramework.xml
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\System.Data.SQLite.xml
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\obj\Debug\sqlite example.csprojResolveAssemblyReference.cache
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\obj\Debug\sqlite example.csproj.CoreCompileInputs.cache
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\obj\Debug\sqlite example.exe
+C:\Users\CP192723\Downloads\comp260-client\Assignment 2\windows\sqlite example\obj\Debug\sqlite example.pdb

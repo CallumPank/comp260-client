@@ -14,7 +14,7 @@ namespace Program
 
         public void Init()
         {
-            var roomMap = new Dictionary<string, Room>();
+            roomMap = new Dictionary<string, Room>();
             {
                 var room = new Room("Room 0", "You are standing in the entrance hall\nAll adventures start here");
                 room.north = "Room 1";
