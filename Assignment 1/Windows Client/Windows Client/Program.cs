@@ -47,7 +47,7 @@ namespace Client
 
             Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             IPEndPoint ipLocal = new IPEndPoint(IPAddress.Parse(ipAdress), port);
-
+            ipLocal = new IPEndPoint(IPAddress.Parse(ipAdress), port);
             bool connected = false;
 
             while (connected == false)
@@ -56,7 +56,7 @@ namespace Client
                 try
                 {
                     s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                    ipLocal = new IPEndPoint(IPAddress.Parse(ipAdress), port);
+                    
 
                     s.Connect(ipLocal);
                     Console.Clear();
@@ -72,6 +72,7 @@ namespace Client
 
             int ID = 0;
 
+            bool firstMsg = false;
 
             var myThread = new Thread(serverReceiveThread);
             myThread.Start(s);
@@ -81,19 +82,39 @@ namespace Client
 
             while (true)
             {
-                String ClientText = Console.ReadLine();
-                ID++;
-                buffer = encoder.GetBytes(ClientText);
-
-                try
+                if (firstMsg == false)
                 {
-                    // Writes messages to server
-                    Console.WriteLine("Writing to server: " + ClientText);
-                    int bytesSent = s.Send(buffer);                    
+                    Console.WriteLine("Type help to begin adventure");
+                    firstMsg = true;
                 }
-                catch (System.Exception ex)
+                Console.Write("\n> ");
+                String CliText = Console.ReadLine();
+                String Msg = ID.ToString() + CliText; 
+                ID++;
+                ASCIIEncoding encoder = new ASCIIEncoding();
+                byte[] buffer = encoder.GetBytes(CliText);
+
+                if (CliText != "")
                 {
-                    Console.WriteLine(ex);
+
+                    try
+                    {
+                        // Writes messages to server
+                        Console.WriteLine("Writing to server: " + CliText);
+                        int bytesSent = s.Send(buffer);
+
+                        buffer = new byte[4096];
+                        int reciever = s.Receive(buffer);
+                        if (reciever > 0)
+                        {
+                            string userCmd = encoder.GetString(buffer, 0, reciever);
+                            Console. WriteLine(userCmd);
+                        }
+                    }
+                    catch (System.Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                    }
                 }
             }
         }
