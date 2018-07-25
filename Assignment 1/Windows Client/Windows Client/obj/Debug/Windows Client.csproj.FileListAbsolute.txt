@@ -2,7 +2,6 @@ C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-cl
 C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-client\Assignment 1\Windows Client\Windows Client\bin\Debug\Form Client.exe
 C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-client\Assignment 1\Windows Client\Windows Client\bin\Debug\Form Client.pdb
 C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-client\Assignment 1\Windows Client\Windows Client\obj\Debug\Windows Client.csprojAssemblyReference.cache
-C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-client\Assignment 1\Windows Client\Windows Client\obj\Debug\Part_03_FormClient.Form1.resources
 C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-client\Assignment 1\Windows Client\Windows Client\obj\Debug\FormClient.Properties.Resources.resources
 C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-client\Assignment 1\Windows Client\Windows Client\obj\Debug\Windows Client.csproj.GenerateResource.cache
 C:\Users\Callum\Desktop\Computing\UNI\Year 2\Second Semester\COMP 260\comp260-client\Assignment 1\Windows Client\Windows Client\obj\Debug\Windows Client.csproj.CoreCompileInputs.cache

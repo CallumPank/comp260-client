@@ -16,7 +16,7 @@ namespace Program
         {
             roomMap = new Dictionary<string, Room>();
             {
-                var room = new Room("Room 0", "You are standing in the entrance hall\nAll adventures start here");
+                var room = new Room("Room 0", "You are standing in the entrance hall\n All adventures start here");
                 room.north = "Room 1";
                 roomMap.Add(room.name, room);
             }
@@ -137,10 +137,10 @@ namespace Program
             {
                 case "help":
                     Console.Clear();
-                    returnString += ("\nCommands are ....");
-                    returnString += ("\nhelp - for this screen");
-                    returnString += ("\nlook - to look around");
-                    returnString += ("\ngo [north | south | east | west]  - to travel between locations");
+                    returnString += ("\nCommands are ....\n");
+                    returnString += ("\nhelp - for this screen\n");
+                    returnString += ("\nlook - to look around\n");
+                    returnString += ("\ngo [north | south | east | west]  - to travel between locations\n");
                     returnString += ("\n\n\n" + currentRoom.desc);
                     returnString += ("\nExits");
                     for (var i = 0; i < currentRoom.exits.Length; i++)
@@ -158,7 +158,7 @@ namespace Program
                     return returnString;
 
                 case "say":
-                    returnString += ("Player " + PlayerID + " : ");
+                    returnString += ("Player " + PlayerID + " : \n");
                     for (var i = 1; i < input.Length; i++)
                     {
                         returnString += (input[i] + " ");
@@ -169,25 +169,25 @@ namespace Program
                     return returnString;
 
                 case "go":
-                    if ((input[1].ToLower() == "north") && (currentRoom.north != null))
+                    if ((input[1].ToLower() == "north ") && (currentRoom.north != null))
                     {
                         player.currentRoom = roomMap[currentRoom.north];
                     }
                     else
                     {
-                        if ((input[1].ToLower() == "south") && (currentRoom.south != null))
+                        if ((input[1].ToLower() == "south ") && (currentRoom.south != null))
                         {
                             player.currentRoom = roomMap[currentRoom.south];
                         }
                         else
                         {
-                            if ((input[1].ToLower() == "east") && (currentRoom.east != null))
+                            if ((input[1].ToLower() == "east ") && (currentRoom.east != null))
                             {
                                 player.currentRoom = roomMap[currentRoom.east];
                             }
                             else
                             {
-                                if ((input[1].ToLower() == "west") && (currentRoom.west != null))
+                                if ((input[1].ToLower() == "west ") && (currentRoom.west != null))
                                 {
                                     player.currentRoom = roomMap[currentRoom.west];
                                 }

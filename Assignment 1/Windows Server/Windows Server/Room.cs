@@ -41,7 +41,7 @@ namespace Program
         public String name = "";
         public String desc = "";
         public String[] exits = new String[4];
-        public static String[] exitNames = { "NORTH", "SOUTH", "EAST", "WEST" };
+        public static String[] exitNames = { "NORTH ", "SOUTH ", "EAST ", "WEST " };
     }
 
 }
