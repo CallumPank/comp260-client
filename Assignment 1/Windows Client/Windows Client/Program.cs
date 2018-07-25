@@ -19,56 +19,63 @@ namespace Client
 
             bool connected = false;
 
-            while (connected == false)
-            {
-                try
-                {
-                    s.Connect(ipLocal);
-                    connected = true;
-                }
-                catch (Exception)
-                {
-                    Thread.Sleep(1000);
-                }
-            }
+            
 
             int ID = 0;
             bool initialMsg = false;
             while (true)
             {
-                //Console.Clear();
-                if (initialMsg == false)
-                {
-                    Console.WriteLine("Type help to begin the adventure\n");
-                    initialMsg = true;
-                }
-                Console.Write("\n> ");
-                String ClientText = Console.ReadLine();
-                String Msg = ID.ToString() + ClientText; // " testing, testing, 1,2,3";
-                ID++;
-                ASCIIEncoding encoder = new ASCIIEncoding();
-                byte[] buffer = encoder.GetBytes(ClientText);
 
-                if (ClientText != "")
+                while (connected == false)
                 {
                     try
                     {
-                        Console.WriteLine("Writing to server:\n " + ClientText);
-                        int bytesSent = s.Send(buffer);
+                        s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                        s.Connect(ipLocal);
+                        connected = true;
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("No server - please wait, you call is important to us");
+                        Thread.Sleep(1000);
+                    }
+                }
 
-                        buffer = new byte[4096];
-                        int reciever = s.Receive(buffer);
-                        if (reciever > 0)
+                while (connected == true)
+                {
+                    //Console.Clear();
+                    if (initialMsg == false)
+                    {
+                        Console.WriteLine("Type help to begin the adventure\n");
+                        initialMsg = true;
+                    }
+                    Console.Write("\n> ");
+                    String ClientText = Console.ReadLine();
+                    String Msg = ID.ToString() + ClientText; // " testing, testing, 1,2,3";
+                    ID++;
+                    ASCIIEncoding encoder = new ASCIIEncoding();
+                    byte[] buffer = encoder.GetBytes(ClientText);
+
+                    if (ClientText != "")
+                    {
+                        try
                         {
-                            String userCmd = encoder.GetString(buffer, 0, reciever);
-                            Console.WriteLine(userCmd);
+                            //Console.WriteLine("Writing to server:\n " + ClientText);
+                            int bytesSent = s.Send(buffer);
+
+                            buffer = new byte[4096];
+                            int reciever = s.Receive(buffer);
+                            if (reciever > 0)
+                            {
+                                String userCmd = encoder.GetString(buffer, 0, reciever);
+                                Console.WriteLine(userCmd);
+                            }
+                        }
+                        catch (System.Exception ex)
+                        {
+                            connected = false;
                         }
                     }
-                    catch (System.Exception ex)
-                    {
-                        Console.WriteLine(ex);
-                    }
-
                 }
                 
             }
